@@ -83,12 +83,12 @@ namespace FCT {
 namespace FCT::Profiling {
 
     /**
-     * @brief 初始化 FCT_Profiling 并向 FCT_Base 无锁钩子注册剖析后端
+     * @brief 初始化 FCT_Profiling 并向 FCT_Base 绑定性能剖析观测回调
      */
     void init() noexcept;
 
     /**
-     * @brief 卸载挂载到 FCT_Base 的性能剖析回调钩子
+     * @brief 解绑注册到 FCT_Base 的性能剖析观测回调
      */
     void shutdown() noexcept;
 
